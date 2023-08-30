@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="enote">
+    <title>Add Question</title>
+    <link rel="apple-touch-icon" href="../../../app-assets/images/logo/m icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/logo/m icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/forms/select/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/components.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/form-validation.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/plugins/forms/pickers/form-flat-pickr.css">
+    <!-- END: Page CSS-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../assets/css/froala_editor.css">
+    <link rel="stylesheet" href="../../../assets/css/froala_style.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/code_view.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/colors.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/draggable.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/emoticons.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/image_manager.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/image.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/line_breaker.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/table.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/char_counter.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/video.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/fullscreen.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/file.css">
+    <link rel="stylesheet" href="../../../assets/css/plugins/quick_insert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/scss/style-rtl.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+
+            <div class="bookmark-wrapper d-flex align-items-center">
+
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+
+                <div class="content-header">
+                    <div class="content-header-left">
+                        <div class="breadcrumbs-top">
+                            <div class="">
+                                <h2 class="content-header-title">الأسئلة</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="nav navbar-nav align-items-center ml-auto">
+                <li class="nav-item d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
+
+                <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
+                    <div class="search-input">
+                        <div class="search-input-icon"><i data-feather="search"></i></div>
+                        <input class="form-control input" type="text" placeholder="استكشف مَرِن ..." tabindex="-1" data-search="search">
+                        <div class="search-input-close"><i data-feather="x"></i></div>
+                        <ul class="search-list search-list-main"></ul>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-user">
+                    <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="avatar"><img class="round" src="../../../app-assets/images/avatars/ar-admin.jpg" alt="avatar" height="35" width="35"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i>إعدادت الحساب</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i>تسجيل الخروج</a>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="main-search-list-defaultlist d-none">
+        <li class="d-flex align-items-center"><a href="javascript:void(0);">
+                <h6 class="section-label mt-75 mb-0">Files</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="mr-75"><img src="../../../app-assets/images/icons/xls.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size mr-50 text-muted">&apos;17kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="mr-75"><img src="../../../app-assets/images/icons/jpg.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div><small class="search-data-size mr-50 text-muted">&apos;11kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="mr-75"><img src="../../../app-assets/images/icons/pdf.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size mr-50 text-muted">&apos;150kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="mr-75"><img src="../../../app-assets/images/icons/doc.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div><small class="search-data-size mr-50 text-muted">&apos;256kb</small>
+            </a></li>
+        <li class="d-flex align-items-center"><a href="javascript:void(0);">
+                <h6 class="section-label mt-75 mb-0">Members</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar mr-75"><img src="../../../app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar mr-75"><img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar mr-75"><img src="../../../app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar mr-75"><img src="../../../app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div>
+            </a></li>
+    </ul>
+
+    <ul class="main-search-list-defaultlist-other-list d-none">
+        <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+                <div class="d-flex justify-content-start"><span class="mr-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+            </a></li>
+    </ul>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/rtl/vertical-menu-template/index.html">
+                    <span class="brand-logo">
+                            <img src="../../../app-assets/images/logo/m icon.png" alt="">
+                        </span>
+                        <h2 class="brand-text">
+                            <!-- <img src="../../../app-assets/images/logo/logon.png" alt=""> -->
+                            منصة مَرِن
+                        </h2>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="shadow-bottom"></div>
+
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">لوحة التحكم</span><i data-feather="more-horizontal"></i></li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الرئيسية</span></a>
+                </li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="bar-chart"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإحصائيات</span></a>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">منطقة الطلاب</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="layout"></i><span class="menu-title text-truncate" data-i18n="Invoice">الصفوف الدراسية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الصفوف</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة صف</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Invoice">المجموعات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع المجموعات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة مجموعة</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="Invoice">الطلاب</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الطلاب</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">الطلاب فى إنتظار التأكيد</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">الطلاب المحظورين</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">الطلاب المتصلين الآن</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة طالب</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المحتوى التعليمي</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="box"></i><span class="menu-title text-truncate" data-i18n="Invoice">بنك الأسئلة</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الأسئلة</span></a>
+                        </li>
+                        <li class="active"><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة سؤال</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">الإختبارات الإلكترنية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الإختبارات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة إختبار</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">الإختبارات الورقية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الإختبارات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة إختبار</span></a>
+                        </li>
+                    </ul>
+                </li> -->
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="video"></i><span class="menu-title text-truncate" data-i18n="Invoice">الفيديوهات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الفيديوهات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة فيديو</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="book"></i><span class="menu-title text-truncate" data-i18n="Invoice">الكتب الإلكترونية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الكتب</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة كتاب</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="tv"></i><span class="menu-title text-truncate" data-i18n="Invoice">الفصول الإفتراضية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الفصول</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة فصل</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الشهور &amp; الدفع</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Invoice">الشهور</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الشهور</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة شهر</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="credit-card"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عمليات إضافة الرصيد</span></a>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الصلاحيات &amp; الأدوار</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Invoice">الصلاحيات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الدوار</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة دور</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user-check"></i><span class="menu-title text-truncate" data-i18n="Invoice">المشرفين</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع المشرفين</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة مشرف</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الإعدادات</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإعدادات</span></a>
+                </li>
+
+            </ul>
+        </div>
+        
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0">
+
+            <div class="content-body">
+                <!-- Validation -->
+                <section class="bs-validation">
+                    <div class="row">
+
+                        <div class="col-md-12 col-12">
+                            <div class="card custom-form-elements">
+
+                                <div class="table-parent">
+                                    <div class="table-header">
+
+                                        <div class="table-name">
+                                            <p>إضافة سؤال جديد</p>
+                                        </div>
+    
+                                        <div class="table-action">
+                            
+                                            <div class="table-link table-link-">
+                                                <a href="#" class="btn btn-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-box"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                                    <span>جميع الأسئلة</span>
+                                                </a>
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card-body">
+                                    <form class="jquery-val-form" method="post">
+
+                                        <div class="row m-0">
+
+                                            <div class="col-lg-12 p-0">
+                                                <div class="form-group q-form-group">
+                                                    <label class="form-label" for="basic-addon-name">السؤال</label>
+        
+                                                    <textarea id="question_editor" name="content1" required></textarea>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row m-0" style="padding: 0 15px">
+
+                                            <div class="col-lg-6 p-0">
+                                                <div class="answer-form-group">
+
+                                                    <div class="answer-form-group-right">
+                                                        <label class="form-label" for="basic-addon-name">أ</label>
+                                                        <div class="checkbox-line">
+                                                            <div class="checkbox-wrap">
+                                                                <div class="h6">
+                                                                    <div class="cbx">
+                                                                        <input id="cbx1" type="radio" name="cbx1"/>
+                                                                        <label for="cbx1"></label>
+                                                                        <svg viewbox="0 0 15 14" fill="none">
+                                                                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                                                                        </svg>
+                                                                        </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <textarea id="answer_editor1" name="content2" required placeholder="d"></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 p-0">
+                                                <div class="answer-form-group">
+
+                                                    <div class="answer-form-group-right">
+                                                        <label class="form-label" for="basic-addon-name">ب</label>
+                                                        <div class="checkbox-line">
+                                                            <div class="checkbox-wrap">
+                                                                <div class="h6">
+                                                                    <div class="cbx">
+                                                                        <input id="cbx2" type="radio" name="cbx2"/>
+                                                                        <label for="cbx2"></label>
+                                                                        <svg viewbox="0 0 15 14" fill="none">
+                                                                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                                                                        </svg>
+                                                                        </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <textarea id="answer_editor2" name="content3" required></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 p-0">
+                                                <div class="answer-form-group">
+                                                    
+                                                    <div class="answer-form-group-right">
+                                                        <label class="form-label" for="basic-addon-name">جـ</label>
+                                                        <div class="checkbox-line">
+                                                            <div class="checkbox-wrap">
+                                                                <div class="h6">
+                                                                    <div class="cbx">
+                                                                        <input id="cbx3" type="radio" name="cbx3"/>
+                                                                        <label for="cbx3"></label>
+                                                                        <svg viewbox="0 0 15 14" fill="none">
+                                                                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                                                                        </svg>
+                                                                        </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <textarea id="answer_editor3" name="content4" required></textarea>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-6 p-0">
+                                                <div class="answer-form-group">
+
+                                                    <div class="answer-form-group-right">
+                                                        <label class="form-label" for="basic-addon-name">د</label>
+                                                        <div class="checkbox-line">
+                                                            <div class="checkbox-wrap">
+                                                                <div class="h6">
+                                                                    <div class="cbx">
+                                                                        <input id="cbx4" type="radio" name="cbx4"/>
+                                                                        <label for="cbx4"></label>
+                                                                        <svg viewbox="0 0 15 14" fill="none">
+                                                                            <path d="M2 8.36364L6.23077 12L13 2"></path>
+                                                                        </svg>
+                                                                        </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+        
+                                                    <textarea id="answer_editor4" name="content5" required></textarea>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="form-label" for="basic-addon-name">درجة السؤال</label>
+
+                                            <input type="number" class="form-control" value="1" name="" required />
+                                        </div>
+
+                                        <div class="form-group form-group-inline">
+                                            <label class="form-label" for="basic-addon-name">إضافة ببنك الأسئلة</label>
+
+                                            <div class="custom-control custom-switch custom-switch-primary">
+                                                <input type="checkbox" class="custom-control-input" id="addToBank" />
+                                                <label class="custom-control-label" for="addToBank">
+                                                    <span class="switch-icon-left"><i data-feather="check"></i></span>
+                                                    <span class="switch-icon-right"><i data-feather="x"></i></span>
+                                                </label>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row add-to-bank-inputs" style="padding: 0 25px">
+
+                                            <div class="col-lg-3 p-0">
+                                                <div class="form-group bank-form-group">
+                                                    <label class="form-label">التيرم</label>
+        
+                                            <select class="form-control select2 select-stage-select" data-placeholder="أختر التيرم">
+                                                <option value="">أختر التيرم</option>
+                                                <option value="c">الأول</option>
+                                                <option value="g">الثاني</option>
+                                                <option value="h">عام</option>
+                                            </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 p-0">
+                                                <div class="form-group bank-form-group">
+                                                    <label class="form-label">الفرع</label>
+        
+                                            <select class="form-control select2 select-stage-select" data-placeholder="أختر الفرع">
+                                                <option value="">اختر الفرع</option>
+                                                <option value="c">قراءة</option>
+                                                <option value="g">نصوص</option>
+                                                <option value="h">نحو</option>
+                                            </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 p-0">
+                                                <div class="form-group bank-form-group">
+                                                    <label class="form-label">الفصل</label>
+        
+                                            <select class="form-control select2 select-stage-select"  data-placeholder="اختر الصف الدراسي">
+                                                <option value="">اختر الفصل</option>
+                                                <option value="c">الفصل الأول</option>
+                                                <option value="g">الفصل الثانى</option>
+                                                <option value="h">الفصل الثالث</option>
+                                            </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-lg-3 p-0">
+                                                <div class="form-group bank-form-group">
+                                                    <label class="form-label">الدرس</label>
+        
+                                            <select class="form-control select2 select-stage-select" data-placeholder="اختر الصف الدراسي">
+                                                <option value="">اختر الدرس</option>
+                                                <option value="c">الدرس الأول</option>
+                                                <option value="g">الدرس الثانى</option>
+                                                <option value="h">الدرس الثالث</option>
+                                            </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="custom-form-elemrnt-button">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">حفظ</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <!-- /Validation -->
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/forms/select/select2.full.min.js"></script>
+    <script src="../../../app-assets/vendors/js/forms/validation/jquery.validate.min.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/forms/form-validation.js"></script>
+    <!-- END: Page JS-->
+    <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/xml/xml.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/froala_editor.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/align.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/code_beautifier.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/code_view.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/colors.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/draggable.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/emoticons.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/font_size.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/font_family.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/image.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/file.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/image_manager.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/line_breaker.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/link.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/lists.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/paragraph_format.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/paragraph_style.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/video.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/table.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/url.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/entities.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/char_counter.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/inline_style.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/save.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/fullscreen.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/quote.min.js"></script>
+    <script type="text/javascript" src="../../../assets/js/plugins/quick_insert.min.js"></script>
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        });
+
+        $("#addToBank").on("change", function () {
+            $(".add-to-bank-inputs").toggleClass("show-bank-inputs");
+        });
+
+        $(".fr-element").on("froalaEditor.focus", function (e, editor) {
+            $(this).parent().parent().addClass("active-textarea");
+        })
+       
+
+        new FroalaEditor('#question_editor', {
+            toolbarButtons: [ ['bold', 'italic', 'underline', 'strikeThrough', 'textColor', 'backgroundColor', 'emoticons'], ['paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent'], ['insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'] ],
+            placeholderText: 'أكتب السؤال هنا',
+            direction: 'rtl'
+        });
+        new FroalaEditor('#answer_editor1', {
+        toolbarInline: true,
+        toolbarButtons: [ ['bold', 'italic', 'underline', 'strikeThrough', 'textColor', 'backgroundColor', 'emoticons'], ['paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent'], ['insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'] ],
+        toolbarButtonsXS: null,
+        toolbarButtonsSM: null,
+        toolbarButtonsMD: null,
+        direction: 'rtl',
+        placeholderText: 'الإجابة الأولي',
+        // events: {
+        //     'focus': function () {
+        //         $(this).parent().parent().addClass("active-textarea");  
+        //     }
+        // },
+        focusOnInit: true
+      });
+        new FroalaEditor('#answer_editor2', {
+        toolbarInline: true,
+        toolbarButtons: [ ['bold', 'italic', 'underline', 'strikeThrough', 'textColor', 'backgroundColor', 'emoticons'], ['paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent'], ['insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'] ],
+        toolbarButtonsXS: null,
+        toolbarButtonsSM: null,
+        toolbarButtonsMD: null,
+        direction: 'rtl',
+        placeholderText: 'الإجابة الثانية'
+      });
+        new FroalaEditor('#answer_editor3', {
+        toolbarInline: true,
+        toolbarButtons: [ ['bold', 'italic', 'underline', 'strikeThrough', 'textColor', 'backgroundColor', 'emoticons'], ['paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent'], ['insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'] ],
+        toolbarButtonsXS: null,
+        toolbarButtonsSM: null,
+        toolbarButtonsMD: null,
+        direction: 'rtl',
+        placeholderText: 'الإجابة الثالثة',
+      });
+        new FroalaEditor('#answer_editor4', {
+        toolbarInline: true,
+        toolbarButtons: [ ['bold', 'italic', 'underline', 'strikeThrough', 'textColor', 'backgroundColor', 'emoticons'], ['paragraphFormat', 'align', 'formatOL', 'formatUL', 'indent', 'outdent'], ['insertImage', 'insertLink', 'insertFile', 'insertVideo', 'undo', 'redo'] ],
+        toolbarButtonsXS: null,
+        toolbarButtonsSM: null,
+        toolbarButtonsMD: null,
+        direction: 'rtl',
+        placeholderText: 'الإجابة الرابعة',
+      });
+    </script>
+    
+</body>
+<!-- END: Body-->
+
+</html>

@@ -1,0 +1,124 @@
+{
+  "data": [
+    {
+      "avatar": "",
+      "id": 1,
+      "group_name": "السبت والثلاثاء الساعة 2",
+      "stage_name": "الصف الأول الإعدادى",
+      "group_id": "ID-13",
+      "groups": "426",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 2,
+      "group_name": "السبت والثلاثاء الساعة 4",
+      "stage_name": "الصف الأول الإعدادى",
+      "group_id": "ID-15",
+      "groups": "52",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 3,
+      "group_name": "السبت والثلاثاء الساعة 5",
+      "stage_name": "الصف الثاني الإعدادى",
+      "group_id": "ID-17",
+      "groups": "84",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 4,
+      "group_name": "السبت والثلاثاء الساعة 2",
+      "stage_name": "الصف الأول الثانوى",
+      "group_id": "ID-14",
+      "groups": "100",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 5,
+      "group_name": " الأحد والأربعاء الساعة 2",
+      "stage_name": "الصف الأول الثانوى",
+      "group_id": "ID-14",
+      "groups": "15",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 6,
+      "group_name": " الأثنين والخميس الساعة 6",
+      "stage_name": "الصف الثانى الثانوى",
+      "group_id": "ID-14",
+      "groups": "74",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 7,
+      "group_name": "السبت والثلاثاء الساعة 2",
+      "stage_name": "الصف  الثالث الثانوى",
+      "group_id": "ID-14",
+      "groups": "86",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 8,
+      "group_name": "السبت والثلاثاء الساعة 2",
+      "stage_name": "الصف الثالث الثانوى",
+      "group_id": "ID-14",
+      "groups": "14",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 9,
+      "group_name": "السبت والثلاثاء الساعة 2",
+      "stage_name": "الصف الثالث الثانوى",
+      "group_id": "ID-14",
+      "groups": "69",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 10,
+      "group_name": "السبت والثلاثاء الساعة 2",
+      "stage_name": "الصف الثالث الثانوى",
+      "group_id": "ID-14",
+      "groups": "69",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 11,
+      "group_name": "السبت والثلاثاء الساعة 2",
+      "stage_name": "الصف الثالث الثانوى",
+      "group_id": "ID-14",
+      "groups": "69",
+      "start_date": "09/23/2016",
+      "students": "10"
+    },
+    {
+      "avatar": "",
+      "id": 12,
+      "group_name": "السبت والثلاثاء الساعة 2",
+      "stage_name": "الصف الثالث الثانوى",
+      "group_id": "ID-14",
+      "groups": "69",
+      "start_date": "09/23/2016",
+      "students": "10"
+    }
+  ]
+}

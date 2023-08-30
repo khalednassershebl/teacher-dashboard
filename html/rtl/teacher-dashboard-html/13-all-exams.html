@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="rtl">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="enote">
+    <title>All Exams | Maren</title>
+
+    <link rel="apple-touch-icon" href="../../../app-assets/images/logo/m icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../app-assets/images/logo/m icon.png">
+
+    <!-- BEGIN: Vendor CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/vendors-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/responsive.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/tables/datatable/rowGroup.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/vendors/css/pickers/flatpickr/flatpickr.min.css">
+    <!-- END: Vendor CSS-->
+
+    <!-- BEGIN: Theme CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/colors.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/components.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/dark-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/bordered-layout.css">
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/themes/semi-dark-layout.css">
+
+    <!-- BEGIN: Page CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/core/menu/menu-types/vertical-menu.css">
+    <!-- END: Page CSS-->
+
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="../../../app-assets/css-rtl/custom-rtl.css">
+    <link rel="stylesheet" type="text/css" href="../../../assets/scss/style-rtl.css">
+    <!-- END: Custom CSS-->
+
+</head>
+<!-- END: Head-->
+
+<!-- BEGIN: Body-->
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static  " data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- BEGIN: Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+
+            <div class="bookmark-wrapper d-flex align-items-center">
+
+                <ul class="nav navbar-nav d-xl-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+
+                <div class="content-header">
+                    <div class="content-header-left">
+                        <div class="breadcrumbs-top">
+                            <div class="">
+                                <h2 class="content-header-title">الإختبارات</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <ul class="nav navbar-nav align-items-center ml-auto">
+                <li class="nav-item d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li>
+
+                <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
+                    <div class="search-input">
+                        <div class="search-input-icon"><i data-feather="search"></i></div>
+                        <input class="form-control input" type="text" placeholder="استكشف مَرِن ..." tabindex="-1" data-search="search">
+                        <div class="search-input-close"><i data-feather="x"></i></div>
+                        <ul class="search-list search-list-main"></ul>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown dropdown-user">
+                    <a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="javascript:void(0);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="avatar"><img class="round" src="../../../app-assets/images/avatars/ar-admin.jpg" alt="avatar" height="35" width="35"></span>
+                    </a>
+
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-user">
+                        <a class="dropdown-item" href="page-profile.html"><i class="mr-50" data-feather="user"></i>إعدادت الحساب</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="page-auth-login-v2.html"><i class="mr-50" data-feather="power"></i>تسجيل الخروج</a>
+                    </div>
+
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="main-search-list-defaultlist d-none">
+        <li class="d-flex align-items-center"><a href="javascript:void(0);">
+                <h6 class="section-label mt-75 mb-0">Files</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="mr-75"><img src="../../../app-assets/images/icons/xls.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size mr-50 text-muted">&apos;17kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="mr-75"><img src="../../../app-assets/images/icons/jpg.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div><small class="search-data-size mr-50 text-muted">&apos;11kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="mr-75"><img src="../../../app-assets/images/icons/pdf.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size mr-50 text-muted">&apos;150kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="mr-75"><img src="../../../app-assets/images/icons/doc.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div><small class="search-data-size mr-50 text-muted">&apos;256kb</small>
+            </a></li>
+        <li class="d-flex align-items-center"><a href="javascript:void(0);">
+                <h6 class="section-label mt-75 mb-0">Members</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar mr-75"><img src="../../../app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar mr-75"><img src="../../../app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar mr-75"><img src="../../../app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar mr-75"><img src="../../../app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div>
+            </a></li>
+    </ul>
+
+    <ul class="main-search-list-defaultlist-other-list d-none">
+        <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+                <div class="d-flex justify-content-start"><span class="mr-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+            </a></li>
+    </ul>
+    <!-- END: Header-->
+
+
+    <!-- BEGIN: Main Menu-->
+    <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow" data-scroll-to-active="true">
+
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item mr-auto"><a class="navbar-brand" href="../../../html/rtl/vertical-menu-template/index.html">
+                    <span class="brand-logo">
+                            <img src="../../../app-assets/images/logo/m icon.png" alt="">
+                        </span>
+                        <h2 class="brand-text">
+                            <!-- <img src="../../../app-assets/images/logo/logon.png" alt=""> -->
+                            منصة مَرِن
+                        </h2>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="shadow-bottom"></div>
+
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">لوحة التحكم</span><i data-feather="more-horizontal"></i></li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الرئيسية</span></a>
+                </li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="bar-chart"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإحصائيات</span></a>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">منطقة الطلاب</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="layout"></i><span class="menu-title text-truncate" data-i18n="Invoice">الصفوف الدراسية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الصفوف</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة صف</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="users"></i><span class="menu-title text-truncate" data-i18n="Invoice">المجموعات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع المجموعات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة مجموعة</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user"></i><span class="menu-title text-truncate" data-i18n="Invoice">الطلاب</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الطلاب</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">الطلاب فى إنتظار التأكيد</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">الطلاب المحظورين</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">الطلاب المتصلين الآن</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة طالب</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">المحتوى التعليمي</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="box"></i><span class="menu-title text-truncate" data-i18n="Invoice">بنك الأسئلة</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الأسئلة</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة سؤال</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">الإختبارات الإلكترنية</span></a>
+                    <ul class="menu-content">
+                        <li class="active"><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الإختبارات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة إختبار</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="file-text"></i><span class="menu-title text-truncate" data-i18n="Invoice">الإختبارات الورقية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الإختبارات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة إختبار</span></a>
+                        </li>
+                    </ul>
+                </li> -->
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="video"></i><span class="menu-title text-truncate" data-i18n="Invoice">الفيديوهات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الفيديوهات</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة فيديو</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="book"></i><span class="menu-title text-truncate" data-i18n="Invoice">الكتب الإلكترونية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الكتب</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة كتاب</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="tv"></i><span class="menu-title text-truncate" data-i18n="Invoice">الفصول الإفتراضية</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الفصول</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة فصل</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الشهور &amp; الدفع</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="calendar"></i><span class="menu-title text-truncate" data-i18n="Invoice">الشهور</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الشهور</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة شهر</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="credit-card"></i><span class="menu-title text-truncate" data-i18n="Dashboards">عمليات إضافة الرصيد</span></a>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الصلاحيات &amp; الأدوار</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user-plus"></i><span class="menu-title text-truncate" data-i18n="Invoice">الصلاحيات</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع الدوار</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة دور</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="user-check"></i><span class="menu-title text-truncate" data-i18n="Invoice">المشرفين</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="app-invoice-list.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">جميع المشرفين</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="app-invoice-preview.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">إضافة مشرف</span></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class=" navigation-header"><span data-i18n="Forms &amp; Tables">الإعدادات</span><i data-feather="more-horizontal"></i>
+                </li>
+
+                <li class="nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="settings"></i><span class="menu-title text-truncate" data-i18n="Dashboards">الإعدادات</span></a>
+                </li>
+
+            </ul>
+        </div>
+        
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- BEGIN: Content-->
+    <div class="app-content content ">
+
+        <div class="content-wrapper container-xxl p-0">
+
+            <div class="content-body">
+                <!-- Basic table -->
+                <section id="basic-datatable">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+
+                                <div class="table-parent">
+
+                                    <div class="table-header">
+
+                                        <div class="table-name">
+                                            <p>جميع الإختبارات</p>
+                                        </div>
+
+                                        <div class="table-action">
+                            
+                                            <div class="table-link table-link-fill">
+                                                <a href="#" class="btn btn-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 11V5H13V11H19V13H13V19H11V13H5V11H11Z"></path></svg>
+                                                    <span>إضافة إختبار</span>
+                                                </a>
+                                            </div>
+                            
+                                        </div>
+                                    </div>
+
+                                    <table class="datatables-basic table">
+
+                                        <thead>
+                                            <tr>
+                                                <!-- This Is For Checkbox  ( targets 0 ) -->
+                                                <th></th>
+                                                <!-- This Is For ID Colume ( targets 1 ) -->
+                                                <th >الترتيب</th>
+
+                                                <th>اسم الإختبار</th>
+
+                                                <th>الصف</th>
+
+                                                <th>المجموعات</th>
+
+                                                <th>الأسئلة</th>
+
+                                                <th>الحلول</th>
+
+                                                <th>الحالة</th>
+                                                
+                                                <th>تاريخ الإضافة</th>
+
+                                                <th>آخر تعديل</th>
+                                                <th class="text-center">خيارات</th>
+                                            </tr>
+                                        </thead>
+    
+                                    </table>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--/ Basic table -->
+            </div>
+        </div>
+
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- BEGIN: Footer-->
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+
+    <!-- BEGIN: Vendor JS-->
+    <script src="../../../app-assets/vendors/js/vendors.min.js"></script>
+    <!-- BEGIN Vendor JS-->
+
+    <!-- BEGIN: Page Vendor JS-->
+    <script src="../../../app-assets/vendors/js/tables/datatable/jquery.dataTables.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.responsive.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/responsive.bootstrap4.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.checkboxes.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/datatables.buttons.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/jszip.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/pdfmake.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/vfs_fonts.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/buttons.html5.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/buttons.print.min.js"></script>
+    <script src="../../../app-assets/vendors/js/tables/datatable/dataTables.rowGroup.min.js"></script>
+    <script src="../../../app-assets/vendors/js/pickers/flatpickr/flatpickr.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.1/js/buttons.colVis.min.js" ></script>
+    <!-- END: Page Vendor JS-->
+
+    <!-- BEGIN: Theme JS-->
+    <script src="../../../app-assets/js/core/app-menu.js"></script>
+    <script src="../../../app-assets/js/core/app.js"></script>
+    <!-- END: Theme JS-->
+
+    <!-- BEGIN: Page JS-->
+    <script src="../../../app-assets/js/scripts/tables/exams-table.js"></script>
+    <!-- END: Page JS-->
+
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+        $(function () {
+    $('table').wrap('<div class="table-parent"></div>');
+    $('.dataTables_filter input').attr("type", "text");
+    $('.dataTables_filter input').attr("placeholder", "يمكنك البحث بجميع خصائص الجدول ...");
+    $('.dataTables_filter').append(`<svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M11 2c4.968 0 9 4.032 9 9s-4.032 9-9 9-9-4.032-9-9 4.032-9 9-9zm0 16c3.867 0 7-3.133 7-7 0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7zm8.485.071l2.829 2.828-1.415 1.415-2.828-2.829 1.414-1.414z"/></svg>`);
+    $(".dt-down-arrow").html(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M20 3a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16zm-9 10H5v6h6v-6zm2 6h6V5h-6v14zM11 5H5v6h6V5z"/></svg>`);
+    $(".dt-buttons").wrap("<div class='table-buttons-parent'></div>");
+});
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

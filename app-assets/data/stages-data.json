@@ -1,0 +1,58 @@
+{
+  "data": [
+    {
+      "avatar": "",
+      "id": 1,
+      "stage_name": "الصف الأول الإعدادى",
+      "stage_id": "ID-14",
+      "groups": "20",
+      "start_date": "09/23/2016",
+      "students": "521"
+    },
+    {
+      "avatar": "",
+      "id": 2,
+      "stage_name": "الصف الثانى الإعدادى",
+      "stage_id": "ID-56",
+      "groups": "15",
+      "start_date": "05/20/2018",
+      "students": "698"
+    },
+    {
+      "avatar": "",
+      "id": 3,
+      "stage_name": "الصف الثالث الإعدادى",
+      "stage_id": "ID-21",
+      "groups": "35",
+      "start_date": "03/24/2018",
+      "students": "214"
+    },
+    {
+      "avatar": "",
+      "id": 4,
+      "stage_name": "الصف الأول الثانوى",
+      "stage_id": "ID-19",
+      "groups": "68",
+      "start_date": "12/03/2017",
+      "students": "201"
+    },
+    {
+      "avatar": "",
+      "id": 5,
+      "stage_name": "الصف الثانى الثانوى",
+      "stage_id": "ID-27",
+      "groups": "56",
+      "start_date": "08/25/2017",
+      "students": "1024"
+    },
+    {
+      "avatar": "",
+      "id": 6,
+      "stage_name": "الصف الثالث الثانوى",
+      "stage_id": "ID-5",
+      "groups": "95",
+      "start_date": "06/01/2017",
+      "students": "19"
+    }
+  ]
+}
